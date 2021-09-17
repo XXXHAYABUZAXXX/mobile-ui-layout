@@ -114,6 +114,13 @@ li {
   gap: 10px;
 }
 
+@media (min-width: 768px) {
+  .grid {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 .grid .item {
   border: 1px solid #ccc;
   padding: 10px;
@@ -140,6 +147,12 @@ li {
   width: 30px;
   -ms-flex-item-align: end;
       align-self: flex-end;
+}
+
+@media (min-width: 768px) {
+  .grid .item img {
+    width: 60px;
+  }
 }
 
 .app-footer {
@@ -176,5 +189,33 @@ li {
 
 .app-footer ul li i {
   font-size: 22px;
+}
+
+#splash {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #cc0000;
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: opacity ease 1s;
+  transition: opacity ease 1s;
+}
+
+#splash img {
+  width: 300px;
+}
+
+#splash.fade {
+  opacity: 0;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,24 @@
+#splash {
+  position: absolute;
+  top: 0;
+  left: 0;
+  //   z-index: 2;
+
+  background: $primary-color;
+  height: 100vh;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: opacity ease 1s;
+
+  img {
+    width: 300px;
+  }
+
+  &.fade {
+    opacity: 0;
+  }
+}
