@@ -5,7 +5,19 @@
   padding: 0;
 }
 
+html,
 body {
+  height: 100%;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   font-family: "Roboto", sans-serif;
 }
 
@@ -24,13 +36,19 @@ li {
   list-style: none;
 }
 
-.app-header {
+.content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+}
+
+.content .app-header {
   background: #cc0000;
   -webkit-box-shadow: 3px 3px 10px #888;
           box-shadow: 3px 3px 10px #888;
 }
 
-.app-header .container {
+.content .app-header .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -47,19 +65,19 @@ li {
   padding: 15px 10px;
 }
 
-.app-header .container .logo {
+.content .app-header .container .logo {
   width: 170px;
   margin-bottom: 15px;
 }
 
-.app-header .container input[type="text"] {
+.content .app-header .container input[type="text"] {
   border: none;
   border-radius: 3px;
   padding: 7px;
   width: 300px;
 }
 
-.sub-header {
+.content .sub-header {
   background: #7c0000;
   color: #fff;
   font-size: 14px;
@@ -79,11 +97,11 @@ li {
           align-items: center;
 }
 
-.sub-header div {
+.content .sub-header div {
   margin-left: 5px;
 }
 
-.sub-header img {
+.content .sub-header img {
   margin-right: 5px;
   width: 40px;
 }
@@ -122,5 +140,41 @@ li {
   width: 30px;
   -ms-flex-item-align: end;
       align-self: flex-end;
+}
+
+.app-footer {
+  background: #e0e0e0;
+  color: #444;
+  font-size: 14px;
+  padding: 15px;
+  margin-top: 10px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.app-footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.app-footer ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+}
+
+.app-footer ul li i {
+  font-size: 22px;
 }
 /*# sourceMappingURL=style.css.map */
