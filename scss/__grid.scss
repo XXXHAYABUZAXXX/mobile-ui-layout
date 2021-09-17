@@ -1,0 +1,27 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+
+  .item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 1px 1px 3px #ccc;
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    p {
+      font-size: 14px;
+      color: $secondary-color;
+      font-weight: bold;
+    }
+
+    img {
+      margin-top: 15px;
+      width: 30px;
+      align-self: flex-end;
+    }
+  }
+}
