@@ -114,6 +114,13 @@ li {
   gap: 10px;
 }
 
+@media (max-width: 500px) {
+  .grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
 @media (min-width: 768px) {
   .grid {
     -ms-grid-columns: (1fr)[3];

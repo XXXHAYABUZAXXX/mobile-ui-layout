@@ -3,7 +3,12 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
 
-  // responsive
+  // mobile screen
+  @media (max-width: 500px) {
+    grid-template-columns: 1fr;
+  }
+
+  // ipad screen
   @media (min-width: 768px) {
     grid-template-columns: repeat(3, 1fr);
   }
